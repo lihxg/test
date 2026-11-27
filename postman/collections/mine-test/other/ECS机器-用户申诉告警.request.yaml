@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://8.155.141.245:8080/echo
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "key": "name",
+        "value": "{\"addTime\":\"1792218430392\",\"appType\":\"java-service\",\"appVersion\":\"V2.0\",\"bizCode\":\"012\",\"clientId\":\"content-check\",\"device\":\"172.17.3.244:8080\",\"errCode\":\"012002001\",\"expCode\":\"012002\",\"extData\":\"{\\\"callBackJson\\\":\\\"{\\\\\\\"uid\\\\\\\":47878521,\\\\\\\"id\\\\\\\":\\\\\\\"681A8DE41E6EB3FABCC4EC3C2844949F\\\\\\\"}\\\",\\\"createTime\\\":\\\"2026-10-17 14:16:54\\\",\\\"esId\\\":\\\"910EB5981C2D9A21CACBC279A83DD2EF\\\",\\\"funcId\\\":\\\"ai_teacher_assistant_input\\\",\\\"updateTime\\\":\\\"2026-10-17 14:16:54\\\"}\",\"organId\":1,\"uid\":47878521,\"username\":\"admin\"}"
+    }
+order: 3000

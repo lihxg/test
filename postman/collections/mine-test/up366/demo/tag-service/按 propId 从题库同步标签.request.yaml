@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:8080/inner/tag/sync/v1/from-qlib
+method: POST
+headers:
+  Content-Type: application/x-www-form-urlencoded
+body:
+  type: urlencoded
+  content:
+    propId: "173"
+    propertyName: test-sync-LHXP-3w
+settings:
+  strictSSL: false
+  followRedirects: true
+order: 1000

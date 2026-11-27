@@ -1,0 +1,16 @@
+$kind: http-request
+url: http://localhost:8080/manage/tag/detail/v1/batch-import?propertyId=2120068455876001798
+method: POST
+queryParams:
+  propertyId: "2120068455876001798"
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - file:///Users/lihx/Desktop/tag-batch-import-2120047569693315115.xlsx
+settings:
+  strictSSL: false
+  followRedirects: true
+order: 2000

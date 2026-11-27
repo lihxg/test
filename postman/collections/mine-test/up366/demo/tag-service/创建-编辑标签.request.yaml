@@ -1,0 +1,53 @@
+$kind: http-request
+name: 创建/编辑标签
+url: http://localhost:8080/manage/tag/property/v1/save
+method: POST
+headers:
+  Content-Type: application/x-www-form-urlencoded
+body:
+  type: urlencoded
+  content:
+    - key: propertyId
+      value: "2120047569693315115"
+    - key: name
+      value: test-sync-LHXP-3w-ggg
+    - key: scopeType
+      value: "1"
+      disabled: true
+    - key: bizSystem
+      value: ""
+      disabled: true
+    - key: entityType
+      value: ""
+      disabled: true
+    - key: displayType
+      value: "1"
+      disabled: true
+    - key: selectMode
+      value: "2"
+      disabled: true
+    - key: dataType
+      value: "1"
+      disabled: true
+    - key: status
+      value: ""
+      disabled: true
+    - key: metaSchema
+      value: ""
+      disabled: true
+    - key: remark
+      value: ""
+      disabled: true
+    - key: extData
+      value: ""
+      disabled: true
+    - key: stageId
+      value: ""
+      disabled: true
+    - key: subjectId
+      value: ""
+      disabled: true
+settings:
+  strictSSL: false
+  followRedirects: true
+order: 3000

@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://localhost:8080/inner/tag/sync/v1/repush-question?questionId=
+method: POST
+queryParams:
+  questionId: ""
+settings:
+  strictSSL: false
+  followRedirects: true
+order: 7000

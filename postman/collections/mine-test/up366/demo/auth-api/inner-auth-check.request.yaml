@@ -1,0 +1,14 @@
+$kind: http-request
+name: inner/auth/check
+url: http://auth-api.up366demo.cn/inner/auth/check?uid=1&uType=401&serverId=tag-api&url=/manage/tag/property/v1/page&loginTime=1793613837000
+method: GET
+queryParams:
+  uid: "1"
+  uType: "401"
+  serverId: tag-api
+  url: /manage/tag/property/v1/page
+  loginTime: "1793613837000"
+settings:
+  strictSSL: false
+  followRedirects: true
+order: 1000

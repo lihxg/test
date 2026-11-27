@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8080/inner/tag/sync/v1/backfill-properties/async
+method: POST
+settings:
+  strictSSL: false
+  followRedirects: true
+order: 6000

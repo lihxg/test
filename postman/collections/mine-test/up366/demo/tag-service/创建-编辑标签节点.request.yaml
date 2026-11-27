@@ -1,0 +1,31 @@
+$kind: http-request
+name: 创建/编辑标签节点
+url: http://localhost:8080/manage/tag/detail/v1/save
+method: POST
+headers:
+  Content-Type: application/x-www-form-urlencoded
+body:
+  type: urlencoded
+  content:
+    - key: tagId
+      value: "2120047570024665159"
+    - key: propertyId
+      value: "2120047569693315115"
+    - key: name
+      value: 听力满分-lhx-async
+    - key: parentId
+      value: "0"
+      disabled: true
+    - key: preTagId
+      value: ""
+      disabled: true
+    - key: status
+      value: "1"
+      disabled: true
+    - key: extData
+      value: ""
+      disabled: true
+settings:
+  strictSSL: false
+  followRedirects: true
+order: 4000

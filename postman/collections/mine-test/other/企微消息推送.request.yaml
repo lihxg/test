@@ -1,0 +1,18 @@
+$kind: http-request
+url: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=87282b95-f1d2-4ae0-b6f6-7fca1d5f63f9
+method: POST
+headers:
+  Content-Type: application/json
+queryParams:
+  key: 87282b95-f1d2-4ae0-b6f6-7fca1d5f63f9
+body:
+  type: json
+  content: |2-
+    
+       {
+        	"msgtype": "text",
+        	"text": {
+            	"content": "hello world"
+        	}
+       }
+order: 1000

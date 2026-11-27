@@ -1,0 +1,35 @@
+$kind: http-request
+name: 查询区域列表 area/list
+description: GET /area/list：查询 area 表的全部区域数据，响应统一为 {success, data, error}。注意 code 字段当前线上数据为 NULL，测试不对其做非空断言。
+url: http://8.155.141.245:8080/area/list
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("status is 200", () => pm.response.to.have.status(200));
+
+      pm.test("content-type is JSON", () => {
+          pm.expect(pm.response.headers.get("Content-Type")).to.include("application/json");
+      });
+
+      pm.test("response uses the ApiResponse envelope", () => {
+          const body = pm.response.json();
+          pm.expect(body.success).to.eql(true);
+          pm.expect(body.error).to.be.null;
+          pm.expect(body.data).to.be.an("array");
+      });
+
+      pm.test("every area has id, value and label", () => {
+          pm.response.json().data.forEach((area) => {
+              pm.expect(area.id).to.be.a("number");
+              pm.expect(area.value).to.be.a("string").and.not.empty;
+              pm.expect(area.label).to.be.a("string").and.not.empty;
+          });
+      });
+
+      pm.test("area ids are unique", () => {
+          const ids = pm.response.json().data.map((area) => area.id);
+          pm.expect(new Set(ids).size).to.eql(ids.length);
+      });
+    language: text/javascript
+order: 4000

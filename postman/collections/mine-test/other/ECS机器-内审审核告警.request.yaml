@@ -1,0 +1,13 @@
+$kind: http-request
+url: http://8.155.141.245:8080/echo
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "key": "name",
+        "value": "{\"addTime\":\"1794810551833\",\"appType\":\"java-service\",\"appVersion\":\"V2.0\",\"bizCode\":\"012\",\"clientId\":\"content-check\",\"device\":\"172.17.3.244:8080\",\"errCode\":\"012001001\",\"expCode\":\"012001\",\"extData\":\"{\\\"checkResult\\\":\\\"0-违规\\\",\\\"checkStatus\\\":\\\"1-阿里云机审已审\\\",\\\"createTime\\\":\\\"2026-11-16 14:29:11\\\",\\\"esId\\\":\\\"7271311F920A2F084CBC1541A8538C52\\\",\\\"funcId\\\":\\\"paper_zip\\\",\\\"taskIdList\\\":\\\"[\\\\\\\"01A1E30B-9BC3-5328-8048-FD340C9E8556\\\\\\\",\\\\\\\"01A1E30B-9BCC-5528-BA21-2DD5FA95A010\\\\\\\",\\\\\\\"01A1E30B-9BE7-5405-9144-0147568AB9F4\\\\\\\",\\\\\\\"01A1E30B-9BF2-5818-8E37-C2528411CA57\\\\\\\",\\\\\\\"01A1E30B-9BC3-570B-BA05-F5E5A63DC9BA\\\\\\\",\\\\\\\"01A1E30B-9C7F-5EB9-9C0A-2813684F1D1B\\\\\\\",\\\\\\\"01A1E30B-9C86-5B59-9EAD-A430ED6A9FAD\\\\\\\",\\\\\\\"01A1E30B-9C80-5337-B42A-9BEDAA6A468D\\\\\\\",\\\\\\\"01A1E30B-9C8A-54B1-A86A-AAECAFA02E6A\\\\\\\",\\\\\\\"01A1E30B-9CA2-54B7-A122-827F83DC005B\\\\\\\"]\\\"}\",\"organId\":1,\"uid\":45768693,\"username\":\"admin\"}"
+    }
+order: 2000
